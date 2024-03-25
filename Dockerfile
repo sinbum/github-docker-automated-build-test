@@ -5,7 +5,7 @@ FROM openjdk:latest
 WORKDIR /app
 
 #현재 디렉토리의 모든 파일을 컨테이너의 /app 디렉토리로 복사.
-COPY app.jar /app
+COPY HelloWorld.jar /app
 
 #필요한 추가 작업이 있다면 여기에 추가.
-CMD ["java", "-jar" "app.jar"]
+CMD ["java", "-jar" "HelloWorld.jar"]
